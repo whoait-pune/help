@@ -215,6 +215,7 @@ doc.text(
         20,
         y
     );
+    Y += 10
     doc.line(
         130,
         y,
