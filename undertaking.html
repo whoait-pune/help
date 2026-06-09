@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undertaking Generator</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f7fb;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    margin-top:20px;
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.preview-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.pdf-btn{
+    background:#16a34a;
+    color:white;
+}
+
+#preview{
+    margin-top:40px;
+}
+
+.affidavit{
+
+    background:white;
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:60px;
+
+    font-family:"Times New Roman",serif;
+
+    line-height:1.9;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.title{
+    text-align:center;
+    letter-spacing:8px;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+.signature-row{
+    display:flex;
+    justify-content:space-between;
+    margin-top:100px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="form-box">
+
+<h1>Undertaking Generator</h1>
+
+<div class="grid">
+
+<input id="studentName" placeholder="Student Name">
+
+<input id="armyNo" placeholder="Army Number">
+
+<input id="rank" placeholder="Rank">
+
+<input id="parentName" placeholder="Parent Name">
+
+<input id="place" placeholder="Place">
+
+<input id="date" placeholder="Date">
+
+</div>
+
+<button class="preview-btn" onclick="generatePreview()">
+Generate Preview
+</button>
+
+<button class="pdf-btn" onclick="generatePDF()">
+Generate PDF
+</button>
+
+</div>
+
+<div id="preview"></div>
+
+</div>
+
+<script src="undertaking.js"></script>
+
+</body>
+</html>

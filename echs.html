@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ECHS Self Attested Proforma</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f7fb;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.form-box{
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:14px;
+    box-sizing:border-box;
+}
+
+textarea{
+    resize:vertical;
+    min-height:100px;
+}
+
+.button-group{
+    margin-top:25px;
+}
+
+button{
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    margin-right:10px;
+}
+
+.preview-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.pdf-btn{
+    background:#16a34a;
+    color:white;
+}
+
+#preview{
+    margin-top:40px;
+}
+
+.document-preview{
+
+    background:white;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px;
+
+    font-family:"Times New Roman",serif;
+
+    line-height:1.9;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.doc-title{
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+.doc-subtitle{
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:30px;
+
+}
+
+.photo-box{
+
+    width:120px;
+
+    height:140px;
+
+    border:2px solid #000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-left:auto;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.signature-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:50px;
+
+}
+
+.center-section{
+
+    text-align:center;
+
+    margin-top:60px;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="form-box">
+
+<h1>ECHS Self Attested Proforma</h1>
+
+<p class="subtitle">
+Dependent Son / Daughter Above 18 Years of Age
+</p>
+
+<div class="grid">
+
+<input
+type="text"
+id="dependentName"
+placeholder="Dependent Name">
+
+<input
+type="text"
+id="armyNo"
+placeholder="Army Number">
+
+<input
+type="text"
+id="rank"
+placeholder="Rank">
+
+<input
+type="text"
+id="exServicemanName"
+placeholder="Ex Serviceman Name">
+
+<input
+type="text"
+id="echsCardNo"
+placeholder="ECHS Card Number">
+
+<input
+type="text"
+id="dob"
+placeholder="Date of Birth">
+
+<input
+type="text"
+id="aadhar"
+placeholder="Aadhar Number">
+
+<input
+type="text"
+id="pan"
+placeholder="PAN Number">
+
+<input
+type="text"
+id="assessmentYear"
+placeholder="Assessment Year (26AS)">
+
+<input
+type="text"
+id="place"
+placeholder="Place">
+
+<input
+type="text"
+id="date"
+placeholder="Date">
+
+</div>
+
+<br>
+
+<textarea
+id="address"
+placeholder="Current Address"></textarea>
+
+<div class="button-group">
+
+<button
+class="preview-btn"
+onclick="generatePreview()">
+Generate Preview
+</button>
+
+<button
+class="pdf-btn"
+onclick="generatePDF()">
+Generate PDF
+</button>
+
+</div>
+
+</div>
+
+<div id="preview"></div>
+
+</div>
+
+<script src="echs.js"></script>
+
+</body>
+</html>
