@@ -28,16 +28,47 @@ function generatePreview() {
             son / daughter of Army No <b>${d.armyNo}</b>,
             Rank <b>${d.rank}</b>,
             Name <b>${d.parentName}</b>,
-            have read and understood all the provisions contained in the
-            <b>AIT Rule Book</b> and <b>AIT Honour Code</b>.
+            hereby solemnly affirm and declare as under :-
         </p>
 
         <p>
-            <b>2.</b>
-            I will follow the rules and codes in letter and spirit.
+            <b>a.</b>
+          I have read and understood all the provisions contained in the AIT Rule
+Book and AIT Honour Code.
         </p>
+         <p>
+            <b>b.</b>
+         I understand that minimum 75% physical attendance for theory
+classes and 100% physical attendance for practical is mandatory every
+semester in order to be eligible to appear for University Examinations.
+        </p>
+         <p>
+            <b>c.</b>
+       I acknowledge that no representations or justifications will be
+entertained for major offenses, including consumption of alcohol/drug,
+careless driving, and involvement in accidents.
+        </p>
+         <p>
+            <b>d.</b>
+         I acknowledge that, I will refrain from any form of ragging activity
+throughout my tenure at AIT. I will not involve in drinking alcohol, smoking and
+will not be involved in any types of violence in campus.
+        </p>
+         <p>
+            <b>e.</b>
+           I assure that, any changes in my personal ERP profile will get updated
+immediately by me through my Counsellor.
+        </p>
+   <p>
+            <b>f.</b>
+           I will adhere to the rules and codes of conduct in letter and spirit.       </p>
 
         <br><br><br>
+   <p>
+            <b>2.</b>
+          Failing which, AIT administration has full right to relegate/rusticate me from the
+College. I will not represent against the decision.
+        </p>
 
         <div style="display:flex;justify-content:space-between;">
 
